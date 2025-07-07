@@ -19,7 +19,7 @@ const FadeInOut = ({
   });
 
   return (
-    <div ref={ref} className={cn("w-full", className)}>
+    <div ref={ref} className={cn("w-full ", className)}>
       <motion.div
         initial={{ opacity: 0, y: yOffset }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
