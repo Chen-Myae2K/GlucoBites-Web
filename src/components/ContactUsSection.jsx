@@ -6,7 +6,7 @@ import FadeInOut from "./ui/fade-in-out";
 const ContactUsSection = () => {
   return (
     <FadeInOut>
-      <section className="pt-40 ">
+      <section id="contact" className="pt-40 ">
         <Container>
           <TitleText
             title="Contact Us"
