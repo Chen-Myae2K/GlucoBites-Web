@@ -43,7 +43,7 @@ const PricingSection = () => {
       ],
       buttonText: "Upgrade to Premium",
       isHighlighted: false,
-      bgColor: "bg-gray-50",
+      bgColor: "bg-neutral-100/50",
       textColor: "text-ink",
     },
     {
@@ -60,7 +60,7 @@ const PricingSection = () => {
       ],
       buttonText: "Get Annual Plan",
       isHighlighted: false,
-      bgColor: "bg-gray-50",
+      bgColor: "bg-neutral-100/50",
       textColor: "text-ink",
     },
   ];
@@ -80,7 +80,7 @@ const PricingSection = () => {
                   <div
                     key={plan.id}
                     className={`${plan.bgColor} rounded-2xl p-7 border ${
-                      plan.isHighlighted ? "" : "border-gray-200"
+                      plan.isHighlighted ? "" : "border-neutral-200"
                     } flex flex-col`}
                   >
                     {/* Header */}
@@ -127,7 +127,7 @@ const PricingSection = () => {
                           {plan.additionalInfo.map((info, index) => (
                             <p
                               key={index}
-                              className="text-sm text-gray-500 mb-1"
+                              className="text-sm text-neutral-500 mb-1"
                             >
                               {info}
                             </p>

@@ -4,220 +4,285 @@ import FadeInOut from "./ui/fade-in-out";
 
 const Footer = () => {
   return (
-    <section className="mt-40 font-inter">
-      <FadeInOut>
-        <footer className="bg-white dark:bg-gray-900">
-          <div className="mx-auto w-full border-t">
-            <Container>
-              <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
-                <div>
-                  <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-                    Company
-                  </h2>
-                  <ul className="text-ink/80 dark:text-gray-400 font-medium">
-                    <li className="mb-4">
-                      <a href="#" className=" hover:underline">
-                        About
-                      </a>
-                    </li>
-                    <li className="mb-4">
-                      <a href="#" className="hover:underline">
-                        Careers
-                      </a>
-                    </li>
-                    <li className="mb-4">
-                      <a href="#" className="hover:underline">
-                        Brand Center
-                      </a>
-                    </li>
-                    <li className="mb-4">
-                      <a href="#" className="hover:underline">
-                        Blog
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div>
-                  <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-                    Help center
-                  </h2>
-                  <ul className="text-ink/80 dark:text-gray-400 font-medium">
-                    <li className="mb-4">
-                      <a href="#" className="hover:underline">
-                        Discord Server
-                      </a>
-                    </li>
-                    <li className="mb-4">
-                      <a href="#" className="hover:underline">
-                        Twitter
-                      </a>
-                    </li>
-                    <li className="mb-4">
-                      <a href="#" className="hover:underline">
-                        Facebook
-                      </a>
-                    </li>
-                    <li className="mb-4">
-                      <a href="#" className="hover:underline">
-                        Contact Us
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div>
-                  <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-                    Legal
-                  </h2>
-                  <ul className="text-ink/80 dark:text-gray-400 font-medium">
-                    <li className="mb-4">
-                      <a href="#" className="hover:underline">
-                        Privacy Policy
-                      </a>
-                    </li>
-                    <li className="mb-4">
-                      <a href="#" className="hover:underline">
-                        Licensing
-                      </a>
-                    </li>
-                    <li className="mb-4">
-                      <a href="#" className="hover:underline">
-                        Terms &amp; Conditions
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div>
-                  <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-                    Download
-                  </h2>
-                  <ul className="text-ink/80 dark:text-gray-400 font-medium">
-                    <li className="mb-4">
-                      <a href="#" className="hover:underline">
-                        iOS
-                      </a>
-                    </li>
-                    <li className="mb-4">
-                      <a href="#" className="hover:underline">
-                        Android
-                      </a>
-                    </li>
-                    <li className="mb-4">
-                      <a href="#" className="hover:underline">
-                        Windows
-                      </a>
-                    </li>
-                    <li className="mb-4">
-                      <a href="#" className="hover:underline">
-                        MacOS
-                      </a>
-                    </li>
-                  </ul>
+    <FadeInOut>
+      <section className="pt-40 font-inter">
+        <footer className="bg-neutral-100/50 py-10 border-t border-neutral-200">
+          <Container>
+            <div className="grid grid-cols-1 lg:grid-cols-6 gap-8 lg:gap-12">
+              {/* Left Section - Description and Social Icons */}
+              <div className="lg:col-span-2">
+                <p className="text-ink/50 text-base leading-relaxed mb-8 max-w-sm">
+                  GlucoBites is the most productive way to build, deploy, and
+                  monitor software.
+                </p>
+
+                {/* Social Icons */}
+                <div className="flex space-x-4">
+                  {/* GitHub */}
+                  <a
+                    href="#"
+                    className="text-ink hover:text-neutral-700 transition-colors"
+                  >
+                    <svg
+                      className="w-6 h-6"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg>
+                  </a>
+
+                  {/* X/Twitter */}
+                  <a
+                    href="#"
+                    className="text-ink hover:text-neutral-700 transition-colors"
+                  >
+                    <svg
+                      className="w-6 h-6"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
+                  </a>
+
+                  {/* YouTube */}
+                  <a
+                    href="#"
+                    className="text-ink hover:text-neutral-700 transition-colors"
+                  >
+                    <svg
+                      className="w-6 h-6"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                    </svg>
+                  </a>
+
+                  {/* Discord */}
+                  <a
+                    href="#"
+                    className="text-ink hover:text-neutral-700 transition-colors"
+                  >
+                    <svg
+                      className="w-6 h-6"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419-.0190 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1568 2.4189Z" />
+                    </svg>
+                  </a>
                 </div>
               </div>
-            </Container>
-            <div className="px-4 py-6 bg-gray-50 dark:bg-gray-700 md:flex md:items-center md:justify-between">
-              <span className="text-sm text-ink/80 dark:text-gray-300 sm:text-center">
-                © 2025 <a href="https://flowbite.com/">GlucoBites</a>. All
-                Rights Reserved.
-              </span>
-              <div className="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
-                >
-                  <svg
-                    className="w-4 h-4"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 8 19"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                  <span className="sr-only">Facebook page</span>
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
-                >
-                  <svg
-                    className="w-4 h-4"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 21 16"
-                  >
-                    <path d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z" />
-                  </svg>
-                  <span className="sr-only">Discord community</span>
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
-                >
-                  <svg
-                    className="w-4 h-4"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 20 17"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                  <span className="sr-only">Twitter page</span>
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
-                >
-                  <svg
-                    className="w-4 h-4"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                  <span className="sr-only">GitHub account</span>
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
-                >
-                  <svg
-                    className="w-4 h-4"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                  <span className="sr-only">Dribbble account</span>
-                </a>
+
+              {/* Resources Column */}
+              <div>
+                <h3 className="text-neutral-900 font-semibold text-base mb-6">
+                  Resources
+                </h3>
+                <ul className="space-y-4">
+                  <li>
+                    <a
+                      href="#"
+                      className="text-ink/50 hover:text-neutral-900 transition-colors"
+                    >
+                      Documentation
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="text-ink/50 hover:text-neutral-900 transition-colors"
+                    >
+                      Starter Kits
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      className="text-ink/50 hover:text-neutral-900 transition-colors"
+                    >
+                      Jobs
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="text-ink/50 hover:text-neutral-900 transition-colors"
+                    >
+                      Careers
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="text-ink/50 hover:text-neutral-900 transition-colors"
+                    >
+                      Trust
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Products Column */}
+              <div>
+                <h3 className="text-neutral-900 font-semibold text-base mb-6">
+                  Products
+                </h3>
+                <ul className="space-y-4">
+                  <li>
+                    <a
+                      href="#"
+                      className="text-ink/50 hover:text-neutral-900 transition-colors"
+                    >
+                      Cloud
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="text-ink/50 hover:text-neutral-900 transition-colors"
+                    >
+                      Forge
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="text-ink/50 hover:text-neutral-900 transition-colors"
+                    >
+                      Nightwatch
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="text-ink/50 hover:text-neutral-900 transition-colors"
+                    >
+                      Vapor
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="text-ink/50 hover:text-neutral-900 transition-colors"
+                    >
+                      Nova
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Packages Column */}
+              <div>
+                <h3 className="text-neutral-900 font-semibold text-base mb-6">
+                  Packages
+                </h3>
+                <ul className="space-y-4">
+                  <li>
+                    <a
+                      href="#"
+                      className="text-ink/50 hover:text-neutral-900 transition-colors"
+                    >
+                      Cashier
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="text-ink/50 hover:text-neutral-900 transition-colors"
+                    >
+                      Dusk
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="text-ink/50 hover:text-neutral-900 transition-colors"
+                    >
+                      Horizon
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="text-ink/50 hover:text-neutral-900 transition-colors"
+                    >
+                      Echo
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Partners Column */}
+              <div>
+                <h3 className="text-neutral-900 font-semibold text-base mb-6">
+                  Partners
+                </h3>
+                <ul className="space-y-4">
+                  <li>
+                    <a
+                      href="#"
+                      className="text-ink/50 hover:text-neutral-900 transition-colors"
+                    >
+                      Vehikl
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="text-ink/50 hover:text-neutral-900 transition-colors"
+                    >
+                      DevSquad
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="text-ink/50 hover:text-neutral-900 transition-colors"
+                    >
+                      Active Logic
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="text-ink/50 hover:text-neutral-900 transition-colors"
+                    >
+                      More Partners
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
-          </div>
+
+            {/* Bottom Section */}
+            <div className="mt-10 ">
+              <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+                <p className="text-ink text-sm">© 2025 GlucoBites</p>
+                <div className="flex space-x-6">
+                  <a
+                    href="#"
+                    className="text-ink hover:text-neutral-700 text-sm transition-colors"
+                  >
+                    Legal
+                  </a>
+                  <a
+                    href="#"
+                    className="text-ink hover:text-neutral-700 text-sm transition-colors"
+                  >
+                    Status
+                  </a>
+                </div>
+              </div>
+            </div>
+          </Container>
         </footer>
-      </FadeInOut>
-    </section>
+        <div className="bg-cyan h-3"></div>
+      </section>
+    </FadeInOut>
   );
 };
 

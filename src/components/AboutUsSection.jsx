@@ -18,7 +18,7 @@ const AboutUsSection = () => {
             description="Designed with simplicity and accuracy in mind, GlucoBites brings together powerful tools in one intuitive app."
           />
 
-          <div className=" bg-gray-100 rounded-3xl p-16  text-ink leading-relaxed">
+          <div className=" bg-neutral-100 rounded-3xl p-16  text-ink leading-relaxed">
             <p>
               GlucoBites was founded on a simple yet powerful idea: when people
               can effortlessly see the impact of every bite, they gain the

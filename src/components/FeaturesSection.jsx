@@ -97,7 +97,7 @@ const FeaturesSection = () => {
               {coreFeatList.map((el) => (
                 <div
                   key={el.id}
-                  className="col-span-1 p-7 bg-gray-100 rounded-3xl shadow-xs"
+                  className="col-span-1 p-7 bg-neutral-100/50 rounded-3xl shadow-xs"
                 >
                   <div className=" text-ink flex flex-col space-y-5 ">
                     <div className="text-cyan">{el.icon}</div>
@@ -119,7 +119,7 @@ const FeaturesSection = () => {
               {otherFeatList.map((el) => (
                 <div
                   key={el.id}
-                  className="col-span-1 p-7 bg-gray-100 rounded-3xl shadow-xs"
+                  className="col-span-1 p-7 bg-neutral-100/50 rounded-3xl shadow-xs"
                 >
                   <div className=" text-ink flex flex-col space-y-5 ">
                     <div className="text-cyan">{el.icon}</div>

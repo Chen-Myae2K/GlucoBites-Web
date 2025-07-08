@@ -7,6 +7,7 @@ import FeaturesSection from "../components/FeaturesSection";
 import TestimonialsSection from "../components/TestimonialsSection";
 import PricingSection from "../components/PricingSection";
 import Footer from "../components/Footer";
+import ContactUsSection from "@/components/ContactUsSection";
 
 const MainPage = () => {
   useEffect(() => {
@@ -19,7 +20,8 @@ const MainPage = () => {
       <AboutUsSection />
       <FeaturesSection />
       <TestimonialsSection />
-      <PricingSection/>
+      <PricingSection />
+      <ContactUsSection />
       <Footer />
     </SmoothScroll>
   );
